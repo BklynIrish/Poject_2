@@ -45,14 +45,30 @@ def welcome():
 
 
 @app.route("/hydro")
-def comparison():
+def hydro():
     """Return dashboard.html."""
     return render_template("hydro.html")
 
-@app.route("/hydro")
-def map():
+@app.route("/wind")
+def wind():
     """Return dashboard.html."""
     return render_template("wind.html")
+
+
+@app.route("/heatmap")
+def heatmap():
+    """Return dashboard.html."""
+    return render_template("heatmap.html")
+
+@app.route("/solar")
+def solar():
+    """Return dashboard.html."""
+    return render_template("solar.html")
+
+@app.route("/location")
+def location():
+    """Return dashboard.html."""
+    return render_template("location.html")
 
 
 # @app.route("/")

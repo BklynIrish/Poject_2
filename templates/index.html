@@ -17,8 +17,9 @@
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between">
                     <a class="navbar-brand h1 goofy_blue" href="./index.html">
-                        <h1>Renewable Energy</h1>
+                        <h1>A Look at Renewable Energy in the USA</h1>
                     </a>
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -43,10 +44,15 @@
                                             location of plants
                                             <i class="fas fa-cloud"></i>
                                         </a>
-                                        <a class="dropdown-item" href=".{{url_for('wind')}}">
-                                            wind 
-                                            <i class="fas fa-wind"></i>
+                                        <a class="dropdown-item" href=".{{url_for('heatmap1')}}">
+                                            heatmap 
+                                            <i class="fas fa-thermometer-empty"></i>
+                                        </a> /a>
+                                        <a class="dropdown-item" href=".{{url_for('sunburst')}}">
+                                            sunburst
+                                            <i class="fas fa-circle"></i>
                                         </a>
+
                                         <!-- <a class="dropdown-item" href="{{url_for('heatmap')}}">
                                             heatmap
                                             <i class="fas fa-thermometer-empty"></i>
@@ -87,16 +93,15 @@
 
                             <div class="col-lg-12">
                                 <div class="col-lg-3">
-                                    <img class="img-responsive" style="float: left;" src="./assets/plots/latitude_v_temperature.png" width=1 00%>
+                                    <img class="img-responsive" style="float: left;" src="../images/sunburst.png" width=200%>
                                 </div>
 
                                 <p class="normal_text">The objective of this project was to find particular data on a topic of interest and to use different web development software to create a variety of visualizations/plots/graphs that would in effect tell a story regarding
                                     the otherwise boring dataset.
-                                    <br>
-                                    <br>We have created a variety of different maps that tell us facts pertaining the to consumption of Renewable Energy Resource consumption in the United States. Seeing that we have become more and more aware of the need
-                                    to care for our environment and the effect of some types of conventional energy sources, such as fossil fuels, have been shown and continuously are being shown to have a negative impact on topics such as Global Warming,
-                                    the slow but very real effect some of these fuels emissions have had on our ozone layer and hence the quality of the air we breathe, we thought it may be interesting to see how such use of cleaner energy resources such
-                                    as Solar Power, Wind Power, and Hydro Power/Hydroelectricity, which happen to the major three and leading sources of RE (Renewable Energy) resources has grown over the past decade or two and how much of these types
+                                    <br> We have created a variety of different maps that tell us facts pertaining the to consumption of Renewable Energy Resource consumption in the United States. Seeing that we have become more and more aware of the
+                                    need to care for our environment and the effect of some types of conventional energy sources, such as fossil fuels, have been shown and continuously are being shown to have a negative impact on topics such as Global
+                                    Warming, the slow but very real effect some of these fuels emissions have had on our ozone layer and hence the quality of the air we breathe, we thought it may be interesting to see how such use of cleaner energy resources
+                                    such as Solar Power, Wind Power, and Hydro Power/Hydroelectricity, which happen to the major three and leading sources of RE (Renewable Energy) resources has grown over the past decade or two and how much of these types
                                     of energy we are using in relation to the less clean energy resources available. Also, the fact the these energy sources are Renewable, meaning we won't run out, this lends itself to an interesting analysis through
                                     visualizations.
 
@@ -135,8 +140,8 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-6">
-                                    <a href="./sunburst.html" title="">
-                                        <img class="img-responsive" style="float: left;" src="../images/sunburst.png" width="100%">
+                                    <a href="./heatmap1.html" title="">
+                                        <img class="img-responsive" style="float: left;" src="../images/heatmap.png" width="100%">
                                     </a>
                                 </div>
                             </div>
